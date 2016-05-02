@@ -1,0 +1,18 @@
+SQL STATEMENTS
+
+
+CUSTOMER Table CREATE statement:
+
+"CREATE TABLE CUSTOMER (
+	ID INT(10) NOT NULL AUTO_INCREMENT,
+	name VARCHAR(25) , password VARCHAR(25),
+	email VARCHAR(50), Primary Key (ID,email),
+	phoneNo INT(50))";
+
+
+BOOKING Table CREATE statement:
+
+"CREATE TABLE BOOKING (
+	bookingId INT(10) NOT NULL 	AUTO_INCREMENT,
+	email VARCHAR(50) NOT NULL, passname 	VARCHAR(50) NOT NULL,      	contactphone 		INT(20) NOT NULL, unitno INT(20), streetno 	INT(20) NOT 	NULL, streetname VARCHAR(50) 	NOT NULL, suburb VARCHAR(50) NOT 	NULL, 	dsuburb VARCHAR(50) NOT NULL, pudate DATE, 	putime TIME, 	bookingdatetime VARCHAR(50) NOT 	NULL, bookingstatus VARCHAR(50) 	NOT NULL, 	PRIMARY KEY (bookingId), FOREIGN KEY 	(email) 	REFERENCES CUSTOMER(email))";
+
